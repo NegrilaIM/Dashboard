@@ -5,17 +5,19 @@ import Sidebar from "./components/Sidebar"
 import UsersPage from './pages/UsersPage'
 import SalesPage from "./pages/SalesPage"
 import OrdersPage from "./pages/OrdersPage"
+import AnalyticsPage from "./pages/AnalyticsPage"
+import SettingsPage from './pages/SettingsPage'
 
 function App() {
 
   return (
     <>
-      <div className="flex h-screen bg-gray-900 text-gray-100 overflow-hidden">
+      <div className="flex h-screen bg-gray-900 text-gray-50 overflow-hidden">
         <div className="fixed inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-cyan-800 via-blue-700 to-indigo-700 opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-orange-500 to-pink-500 opacity-60
 
 
-
+" />
           <div className="absolute inset-0 backdrop-blur-sm" />
         </div>
         <Sidebar />
@@ -25,6 +27,8 @@ function App() {
           <Route path="/users" element={<UsersPage />} />
           <Route path='/sales' element={<SalesPage />} />
           <Route path='/orders' element={<OrdersPage />} />
+          <Route path='/analytics' element={<AnalyticsPage />} />
+          <Route path='/settings' element={<SettingsPage />} />
         </Routes>
       </div>
     </>
